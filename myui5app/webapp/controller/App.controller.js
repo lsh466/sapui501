@@ -8,6 +8,11 @@ sap.ui.define(
     return BaseController.extend("myui5app.controller.App", {
       onInit: function () {
 
+      },
+
+      onShowHello() {
+        // show a native JavaScript alert
+        alert("Hello World");
       }
     });
   }

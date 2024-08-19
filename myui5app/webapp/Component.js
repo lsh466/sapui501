@@ -3,11 +3,12 @@
  */
 
 sap.ui.define([
-        "sap/ui/core/UIComponent",
-        "sap/ui/Device",
-        "myui5app/model/models"
-    ],
-    function (UIComponent, Device, models) {
+    "sap/ui/core/UIComponent",
+    "sap/ui/Device",
+    "myui5app/model/models",
+    "sap/ui/model/json/JSONModel"
+],
+    function (UIComponent, Device, models, JSONModel) {
         "use strict";
 
         return UIComponent.extend("myui5app.Component", {
@@ -23,6 +24,16 @@ sap.ui.define([
             init: function () {
                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
+
+                const oData = {
+                    recipient: {
+                        name: "World"
+                    }
+                };
+                const oModel = new JSONModel(oData);
+                this.setModel(oModel);
+
+
 
                 // enable routing
                 this.getRouter().initialize();
