@@ -7,7 +7,7 @@ sap.ui.define(
 
     return BaseController.extend("myui5app.controller.App", {
       onInit: function () {
-        console.log("Hello World");
+
       }
     });
   }
