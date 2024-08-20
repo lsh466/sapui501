@@ -5,32 +5,16 @@
     <Shell>
         <App id="app" class="myAppDemoWT">
             <pages>
-                <Page title="{i18n>homePageTitle}">
+                <Page title="{i18n>homePageTitle}"
+                    >
                     <content>
-                        <Panel
-                        headerText="{i18n>helloPaneltitle}"
-                        class="sapUiResponsiveMargin"
-                        width="auto"
+                        <mvc:XMLView
+                            id="idXMLView"
+                            viewName="myui5app.view.HelloPanel"    
                         >
-                        <content>
-                            <Button
-                            text="{i18n>showHelloButtonText}"
-                            press=".onShowHello"
-                            class="myCustomButton"
-                            />
-                        <Input
-                            value="{/recipient/name}"
-                            description="Hello {/recipient/name}"
-                            valueLiveUpdate="true"
-                            width="50%"/>
-
-                        <FormattedText htmlText="Hello {/recipient/name}"
-                        class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
-                        width="auto"
-                        ></FormattedText>
-                        </content>
-
-                        </Panel>
+                    
+                    </mvc:XMLView>
+                        
                     </content>
 
                 </Page>
