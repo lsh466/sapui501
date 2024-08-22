@@ -4,7 +4,6 @@
     xmlns="sap.m"
     xmlns:c="sap.ui.core"
     displayBlock="true"
-    height="100%"
     busyIndicatorDelay="0"
 >
     <Panel
@@ -14,7 +13,6 @@
     >
         <content>
             <Button
-                icon="sap-icon://s4hana"
                 text="{i18n>openDialogButtonText}"
                 press=".onOpenDialog"
                 class="sapUiSmallMarginEnd"

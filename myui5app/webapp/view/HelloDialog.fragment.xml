@@ -17,7 +17,7 @@
 			<Button
 				icon="sap-icon://accept"
 				text="{i18n>dialogCloseButtonText}"
-				press=".onCloseDialog"
+				press=".onButtonPress"
 			/>
 		</beginButton>
 	</Dialog>

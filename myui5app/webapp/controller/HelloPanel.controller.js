@@ -19,7 +19,7 @@ sap.ui.define(
           oDialog.open();
         });
       },
-      onCloseDialog() {
+      onButtonPress() {
         this.byId("idDialog").close();
       },
     });

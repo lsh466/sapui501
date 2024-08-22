@@ -17,6 +17,10 @@
                             id="idXMLView"
                             viewName="myui5app.view.HelloPanel"
                         />
+                        <mvc:XMLView
+                            id="idXMLView1"
+                            viewName="myui5app.view.InvoiceList"
+                        />
                     </content>
                 </Page>
             </pages>
