@@ -1,25 +1,25 @@
-<mvc:View controllerName="myui5app.controller.App"
+<mvc:View
+    controllerName="myui5app.controller.App"
     xmlns:html="http://www.w3.org/1999/xhtml"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
     <Shell>
-        <App id="app" class="myAppDemoWT">
+        <App
+            id="app"
+            class="myAppDemoWT"
+        >
             <pages>
-                <Page title="{i18n>homePageTitle}"
-                    >
+                <Page title="{i18n>homePageTitle}">
                     <content>
                         <mvc:XMLView
                             id="idXMLView"
-                            viewName="myui5app.view.HelloPanel"    
-                        >
-                    
-                    </mvc:XMLView>
-                        
+                            viewName="myui5app.view.HelloPanel"
+                        />
                     </content>
-
                 </Page>
             </pages>
         </App>
-
     </Shell>
 </mvc:View>
