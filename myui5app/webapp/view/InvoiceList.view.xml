@@ -3,8 +3,6 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:c="sap.ui.core"
-    displayBlock="true"
-    busyIndicatorDelay="0"
 >
     <List
         headerText="{i18n>invoiceListTitle}"
@@ -23,7 +21,15 @@
                     }
                 }"
                 numberUnit="{view>/currency}"
-            />
+                numberState="{= ${invoices>ExtendedPrice} > 50 ? 'Error' : 'Success' }"
+            >
+                <firstStatus>
+                    <ObjectStatus text="{
+                        path: 'invoices>Status',
+                        formatter: '.formatters.statusText'
+                    }" />
+                </firstStatus>
+            </ObjectListItem>
         </items>
     </List>
 </mvc:View>
