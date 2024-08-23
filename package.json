@@ -13,5 +13,8 @@
     },
     "workspaces": [
         "myui5app"
-    ]
+    ],
+    "devDependencies": {
+        "ui5-middleware-simpleproxy": "^3.2.18"
+    }
 }

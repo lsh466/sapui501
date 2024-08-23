@@ -25,3 +25,8 @@ server:
         test:
           - framework: Qunit
           - framework: OPA5
+    - name: ui5-middleware-simpleproxy
+      afterMiddleware: compression
+      mountPath: /V2
+      configuration:
+        baseUri: "https://services.odata.org"
