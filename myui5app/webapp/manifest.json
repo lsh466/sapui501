@@ -75,7 +75,9 @@
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",
+        "type": "View",
         "viewType": "XML",
+        "path": "myui5app.view",
         "async": true,
         "viewPath": "myui5app.view",
         "controlAggregation": "pages",
@@ -86,7 +88,12 @@
         {
           "name": "RouteMainView",
           "pattern": ":?query:",
-          "target": ["TargetMainView"]
+          "target": ["overview"]
+        },
+        {
+          "pattern": "detail",
+          "name": "detail",
+          "target": "detail"
         }
       ],
       "targets": {
@@ -96,6 +103,14 @@
           "clearControlAggregation": false,
           "viewId": "MainView",
           "viewName": "App"
+        },
+        "overview": {
+          "id": "overview",
+          "name": "Overview"
+        },
+        "detail": {
+          "id": "detail",
+          "name": "Detail"
         }
       }
     },
