@@ -23,9 +23,9 @@ sap.ui.define(
         const aFilter = [];
         const sQuery = oEvent.getParameter("query");
         if (sQuery) {
-          aFilter.push;
-          new Filter("ProductName", FilterOperator.Contains, sQuery)();
-          aFilter.push(new Filter("Status", FilterOperator.Contains, sQuery));
+          aFilter.push(
+            new Filter("ProductName", FilterOperator.Contains, sQuery)
+          );
         }
 
         const oList = this.byId("invoiceList");

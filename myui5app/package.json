@@ -22,7 +22,7 @@
     "ui5-middleware-simpleproxy": "*"
   },
   "scripts": {
-    "start": "fiori run --open index.html",
+    "start": "fiori run --open test/mockServer.html",
     "build": "ui5 build --config=ui5.yaml --clean-dest --dest ../dist/myui5app",
     "ui5lint": "ui5lint",
     "lint": "eslint ./",
